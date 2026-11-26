@@ -1,0 +1,1 @@
+terraform import algizian_email_settings.myapp k3x9q2a

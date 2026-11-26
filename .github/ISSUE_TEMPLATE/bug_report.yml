@@ -1,0 +1,22 @@
+name: Bug report
+description: Something does not work as documented
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Never paste tokens, client secrets, provider secrets or state files. For security problems see SECURITY.md instead.
+  - type: input
+    id: versions
+    attributes: { label: Provider and Terraform versions, placeholder: "provider 0.1.0, terraform 1.17.2" }
+    validations: { required: true }
+  - type: textarea
+    id: config
+    attributes: { label: Configuration (without secrets), render: hcl }
+    validations: { required: true }
+  - type: textarea
+    id: expected
+    attributes: { label: What you expected and what happened, description: Include the full error text. }
+    validations: { required: true }
+  - type: textarea
+    id: steps
+    attributes: { label: Steps to reproduce }

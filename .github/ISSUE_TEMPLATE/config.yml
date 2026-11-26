@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or idea
+    url: https://github.com/elmerisllc/terraform-provider-algizian/discussions
+    about: Ask how to do something or discuss an idea.
+  - name: Security problem
+    url: https://github.com/elmerisllc/terraform-provider-algizian/security/advisories/new
+    about: Report a vulnerability privately.

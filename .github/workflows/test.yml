@@ -1,0 +1,15 @@
+name: test
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-go@v6
+        with: { go-version-file: go.mod }
+      - uses: hashicorp/setup-terraform@v3
+        with: { terraform_wrapper: false }
+      - run: go vet ./...
+      - run: TF_ACC=1 go test ./... -timeout 10m
+      - name: docs are up to date
+        run: go generate ./... && git diff --exit-code docs
