@@ -1,0 +1,24 @@
+# Terraform provider for Algizian
+
+> Manage Algizian (OAuth 2.1 / OpenID Connect server with social logins, https://algizian.com) from Terraform: tenants, custom domains, OIDC clients, own provider apps, email sign-in, service accounts, with tags. Registry source: elmerisllc/algizian.
+
+## Start here
+- [README](README.md): install (also without the Registry, with signature check), authentication, what each token type can do, things to know
+- [Provider configuration](docs/index.md)
+
+## Resources
+- [algizian_tenant](docs/resources/tenant.md): a tenant (branding, providers, tags, deletion lock)
+- [algizian_custom_domain](docs/resources/custom_domain.md): the tenant's issuer domain and its DNS record
+- [algizian_client](docs/resources/client.md): OIDC client
+- [algizian_provider_credentials](docs/resources/provider_credentials.md): own Google, Microsoft or Apple app
+- [algizian_email_settings](docs/resources/email_settings.md): email-code sign-in
+- [algizian_service_account](docs/resources/service_account.md) and [algizian_service_account_token](docs/resources/service_account_token.md)
+
+## Data sources
+- [algizian_tenant](docs/data-sources/tenant.md), [algizian_tenants](docs/data-sources/tenants.md), [algizian_providers](docs/data-sources/providers.md)
+
+## Examples
+- [examples/](examples/): complete configurations for every resource
+
+## Optional
+- [CONTRIBUTING](CONTRIBUTING.md), [SUPPORT](SUPPORT.md), [SECURITY](SECURITY.md), [CHANGELOG](CHANGELOG.md)

@@ -1,0 +1,5 @@
+*.dll
+*.exe
+dist/
+.terraform/
+*.tfstate*

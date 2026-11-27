@@ -1,0 +1,14 @@
+name: Feature request
+description: A new resource, argument or behaviour
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes: { label: What do you want to manage or change, description: Describe the goal, not only the solution. }
+    validations: { required: true }
+  - type: textarea
+    id: example
+    attributes: { label: Example configuration you would like to write, render: hcl }
+  - type: textarea
+    id: api
+    attributes: { label: Related Algizian API or docs, description: Link the endpoint or page if you know it. }
